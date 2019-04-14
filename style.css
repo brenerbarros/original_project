@@ -73,10 +73,20 @@ section {
     padding: 10px 0 0 40px;
 }
 
+.nav_bottom a {
+    text-decoration: none;
+    color: #AFB5C1;
+}
+
+.nav_bottom a:hover {
+    text-decoration: underline;
+}
+
 ul#mini {
+    float: left;
     width: 80px;
     list-style-type: none;
-    padding: 0 0 0 40px;
+    padding: 20px 0 0 40px;
     font-size: 12px;
     color: #DF8F76;
     font-family: sans-serif;
@@ -92,11 +102,108 @@ ul#mini li img {
 
 ul#mini li#up img, ul#mini li#down img {
     width: 15px;
-    text-align: center;
+    margin-left: 33px;
+}
+
+ul#mini li#up img, ul#mini li#down img, ul#mini li#play img:hover {
+    cursor: pointer;
+}
+
+ul#mini li#play {
+    margin-left: 25px;
 }
 
 ul#mini li#play img {
     width: 30px;
+}
+
+#produto {
+    float: left;
+    width: 430px;
+    margin: 0 100px;
+}
+
+.card {
+    float: left;
+    font-family: sans-serif;
+    padding: 20px;
+    border: 2px solid #AFB5C1;
+    border-radius: 2px;
+}
+
+.card ul#cores {
+    float: left;
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.card ul#cores li#lilas, .card ul#cores li#fucsia, .card ul#cores li#marrom, .card ul#cores li#preto:hover {
+    cursor: pointer;
+}
+
+.card ul#cores li#lilas {
+    float: left;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #A50C5F;
+    margin: 0 15px 0 0;
+}
+
+.card ul#cores li#fucsia {
+    float: left;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #6B85C0;
+    margin: 0 15px 0 0;
+}
+
+.card ul#cores li#marrom {
+    float: left;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #9E4A31;
+    margin: 0 15px 0 0;
+}
+
+.card ul#cores li#preto {
+    float: left;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #000000;
+    margin: 0 15px 0 0;
+}
+
+.card ul#tamanhos {
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.card ul#tamanhos li#33 {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #000;
+    margin: 0 20px 0 0;
+}
+
+.card ul#tamanhos li#34 {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #0;
+    margin: 0 20px 0 0;
+}
+
+.card ul#tamanhos li#35 {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #EEEDEE;
+    margin: 0 20px 0 0;
 }
 
 .circle {
@@ -113,14 +220,13 @@ ul#mini li#play img {
 .top_footer {
     position: absolute;
     width: 100%;
-    height: 230px;
     border-top: 2px solid #AFB5C1;
     bottom: 90px;
 }
 
 .top_footer ul {
     list-style-type: none;
-    padding: 30px 90px 0 0;
+    padding: 30px 90px 20px 0;
 }
 
 .top_footer ul a {
@@ -141,7 +247,7 @@ ul#mini li#play img {
 
 .top_footer ul#instituicao {
     float: left;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .top_footer ul#info {
