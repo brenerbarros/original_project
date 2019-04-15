@@ -4,6 +4,8 @@
         <title>Layout</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lightbox.min.css">
+        
         
         <style></style>
     </head>
@@ -22,7 +24,7 @@
                     <li><a href="">BOLSAS</a></li>
                     <li><a href="">ACESSÓRIOS</a></li>
                     <li><a href="">OFF</a></li>
-                    <li style="float: right; margin-right: 10px;"><a href=""><img src="Images/Header/compras_icon.png" title="Sacola"></a></li>
+                    <li style="float: right; margin-right: 10px;"><a href=""><img src="Images/Header/compras_icon.png" title="Sacola"></a> <span style="font-size: 14px; color: gray;" id="products_number">0</span></li>
                     <li style="float: right; margin-right: 25px; margin-top: 5px;"><form><input type="text" name="busca" placeholder="Busca" style="border: 0; outline: 0; color: #7f7f7f" size="3" title="Preencha este campo."></form>
                     <li style="float: right; margin-right: 10px;"><img src="Images/Header/buscar_icon.png"></li>
                 </ul>
@@ -33,7 +35,8 @@
                 
                 <ul id="mini">
                     <li id="play">Vídeo
-                        <img src="Images/Content/play_video.png"></li>
+                        <img src="Images/Content/play_video.png">
+                    </li>
                     <li id="up"><img src="Images/Content/seta_up.png"></li>
                     <li><img src="Images/Content/sandalias.png"></li>
                     <li style="opacity: 0.5"><img src="Images/Content/sandalias.png"></li>
@@ -49,25 +52,45 @@
                     <p>RT 0568 | 03.07.0653</p>
                     <p style="margin-top: 25px;"><span style="color: #DF8F76; text-decoration: line-through">R$ 69,00 </span><span style="color: #DF8F76;">|</span><span style="font-size: 20px; font-weight: bold; color: #585858"> R$ 55,20</span></p>
                     <p style="color: #A4A4A4; font-size: 12px">Ou 6x de R$ 9,20</p>
-                    <p style="margin-top: 40px">Cor:</p>
+                    <p style="margin-top: 40px">Cor: (<span id="cor_txt">cores</span>)</p>
                     
                     <ul id="cores">
-                        <li id="lilas"></li>
+                        <li id="roxo"></li>
                         <li id="fucsia"></li>
                         <li id="marrom"></li>
                         <li id="preto"></li>
                     </ul>
                     
-                    <p style="margin: 80px 0 20px 0; text-align: left;">Tamanho:</p>
+                    <p style="margin: 80px 0 20px 0; text-align: left;">Tamanho: (<span id="tamanho_txt">0</span>)</p>
                     
                     <ul id="tamanhos">
-                        <li id="33"></li>
-                        <li id="34"></li>
-                        <li id="35"></li>
+                        <li id="um"><p style="margin-top: 8px" id="um_txt">33</p></li>
+                        <li id="dois"><p style="margin-top: 8px" id="dois_txt">34</p></li>
+                        <li id="tres"><p style="margin-top: 8px" id="tres_txt">35</p></li>
                     </ul>
                     
+                    <a href="Images/Content/sandalias.png"><img src="Images/Card/button_add.png" id="button_add"></a>
+                    <p style="width: 405px; margin-top: 15px; font-size: 15px">Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.</p>
                 </div>
+            </section>
+            
+            <div class="section_products">
+                <p id="title_products">Quem viu viu também</p>
                 
+                <center>
+                    <ul id="products_bottom">
+                        <li><img src="Images/Products/product1.png"><p style="text-align: left">R$ 204,90</p></li>
+                        <li><img src="Images/Products/product2.png"><p style="text-align: left">R$ 204,90</p></li>
+                        <li><img src="Images/Products/product3.png"><p style="text-align: left">R$ 204,90</p></li>
+                        <li><img src="Images/Products/product4.png"><p style="text-align: left">R$ 204,90</p></li>
+                    </ul>
+                    <img src="Images/Products/left.png" id="products_button_left">
+                    <p id="number_list"> 1 de 10 </p>
+                    <img src="Images/Products/right.png" id="right">
+                </center>
+            </div>
+            
+            <footer>
                 <div class="top_footer">
                     <ul id="redes_sociais">
                         <li style="margin-left: 65px"><a href=""><img src="Images/Top_footer/facebook_icon.png"></a></li>
@@ -96,16 +119,18 @@
                         <li><a href="">Procon-RJ</a></li>
                     </ul>
                 </div>
-            </section>
-            
-            <footer>
-                <a href="https://www.original.io/" style="text-decoration: none" target="_blank"><img src="Images/Footer/logo_original.png" alt="Logo da Original"></a>
-                <span class="text">
-                    Via Mia | V. Milano Centro Comercio de Bolsas Eireli - EPP.<br>
-                    Av.das Américas, 500 - bloco 13, sala 205 - Barra da Tijuca - Rio de Janeiro - RJ - CEP: 22640-100<br>
-                    CNPJ: 05.292.288/0002-10 - I.E: 86.732.548
-                </span>
+                
+                <div class="bottom_footer">
+                    <div class="box_paragraph">
+                        <p>Via Mia | V. Milano Centro Comercio de Bolsas Eireli - EPP.</p>
+                        <p>Av.das Américas, 500 - bloco 13, sala 205 - Barra da Tijuca - Rio de Janeiro - RJ - CEP: 22640-100</p>
+                        <p>CNPJ: 05.292.288/0002-10 - I.E: 86.732.548</p>
+                    </div>
+                    <a href="https://www.original.io/" style="text-decoration: none"><img src="Images/Footer/logo_original.png" alt="Logo da Original" id="logo_footer"></a>
+                </div>
             </footer>
         </div>
+        <script type=text/javascript src="script.js"></script>
+        <script type=text/javascript src="lightbox-plus-jquery.min.js"></script>
     </body>
 </html>
