@@ -36,6 +36,17 @@ nav {
     text-align: center;
 }
 
+input[type=text] {
+    border: 0;
+    outline: 0; 
+    color: #7f7f7f; 
+    width: 50px
+}
+
+input[type=text]:focus {
+  width: 100px;
+}
+
 nav ul {
     list-style-type: none;
 }
@@ -69,9 +80,13 @@ nav ul li#login_button a:hover {
     text-decoration: underline;
 }
 
-nav li {
+nav ul li {
     display: inline;
-    margin-right: 50px;
+}
+
+nav ul li.principal {
+    margin-right: 0;
+    margin-left: 50px;
 }
 
 section {
@@ -82,17 +97,17 @@ section {
     float: left;
     width: 100%;
     padding: 20px 40px;
+    
+}
+
+.nav_bottom a {
+    text-decoration: none;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 20px;
     color: #AEB6C1;
-}
-
-.nav_bottom a {
-    text-decoration: none;
-    color: #AFB5C1;
 }
 
 .nav_bottom a:hover {
@@ -341,12 +356,6 @@ ul#mini li#play img {
 
 .box_paragraph {
     margin-left: 80px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 20px;
-    color: #FFFFFF;
 }
 
 .bottom_footer img {
@@ -356,9 +365,12 @@ ul#mini li#play img {
 }
 
 .bottom_footer p {
-    color: white;
-    font-size: 13px;
-    font-family: Arial;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
 
 footer {

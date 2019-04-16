@@ -6,6 +6,7 @@ function setEvents()
     document.getElementById("number_products").innerHTML = numberProducts.toString();
     var cores = document.getElementById("cores");
     var tamanhos = document.getElementById("tamanhos");
+    var search = document.getElementById("search");
 
     cores.addEventListener('click', function(e) {
         document.getElementById("cor_txt").innerHTML = e.target.id;
