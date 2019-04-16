@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Gotham;
+    src: url('Fonts/Gotham-Book.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +12,7 @@
 body {
     height: 100%;
 }
+
 .container {
     height: auto;
 }
@@ -30,16 +36,28 @@ nav {
     text-align: center;
 }
 
-nav a {
-    text-decoration: none;
-    color: #7f7f7f;
-}
-
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+}
+
+nav ul li#login_button a {
+    float: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #686868;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: Gotham;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #686868;
 }
 
 nav ul a:hover {
@@ -47,7 +65,7 @@ nav ul a:hover {
     transition-duration: 1s;
 }
 
-nav li:nth-child(1):hover {
+nav ul li#login_button a:hover {
     text-decoration: underline;
 }
 
@@ -63,11 +81,13 @@ section {
 .nav_bottom {
     float: left;
     width: 100%;
-    height: 50px;
-    color: #AFB5C1;
-    font-family: sans-serif;
-    font-size: 14px;
-    padding: 10px 0 0 40px;
+    padding: 20px 40px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #AEB6C1;
 }
 
 .nav_bottom a {
@@ -80,7 +100,7 @@ section {
 }
 
 ul#mini {
-    float: left;
+    display: inline-block;
     width: 80px;
     list-style-type: none;
     padding: 20px 0 0 40px;
@@ -115,17 +135,23 @@ ul#mini li#play img {
 }
 
 #produto {
-    float: left;
+    display: inline-block;
     width: 430px;
     margin: 0 100px;
 }
 
 .card {
-    float: left;
-    font-family: sans-serif;
-    padding: 20px;
+    display: inline-block;
+    padding: 10px;
     border: 2px solid #AFB5C1;
     border-radius: 2px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #202020;
+    text-align: left;
 }
 
 .card ul#cores {
@@ -168,9 +194,11 @@ ul#mini li#play img {
 
 .card ul#tamanhos {
     list-style-type: none;
+    font-family: Gotham;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
-    font-size: 12px;
-    color: #5B6668;
+    color: #2A5A75;
 }
 
 .card ul#tamanhos li#um, .card ul#tamanhos li#dois, .card ul#tamanhos li#tres:hover {
@@ -183,7 +211,11 @@ ul#mini li#play img {
     height: 30px;
     width: 30px;
     margin: 0 2px 0 0;
-    background-color: #D8D8D8;
+    background-color: #EBEBEB;
+}
+
+.card ul#tamanhos li p {
+    margin-top: 5px;
 }
 
 .card img#button_add {
@@ -201,6 +233,15 @@ ul#mini li#play img {
     padding-bottom: 150px;
 }
 
+.section_products p#tittle_products {
+    font-family: Gotham;
+    font-size: 26px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DE8F75;
+}
+
 .section_products img:hover {
     cursor: pointer;
 }
@@ -215,13 +256,15 @@ ul#mini li#play img {
     padding: 150px 0 40px 0;
 }
 
-.section_products ul#products_bottom {
-    
-}
-
 .section_products ul#products_bottom li {
     display: inline-block;
     margin-right: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #202020;
 }
 
 .section_products img#products_button_left, .section_products img#products_button_right, .section_products p#number_list {
@@ -229,9 +272,31 @@ ul#mini li#play img {
     padding: 20px 5px 0 5px;
 }
 
+.section_products p#number_list {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: #2A5A75;
+}
+
+.section_products img#products_button_left {
+    opacity: 0.5;
+}
+
 .top_footer {
     position: relative;
     border-top: 2px solid #AFB5C1;
+}
+
+.top_footer .topFooter_title {
+    font-family: Gotham;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #AEB6C1;
 }
 
 .top_footer ul {
@@ -239,15 +304,14 @@ ul#mini li#play img {
     padding: 30px 90px 20px 0;
 }
 
-.top_footer ul li {
-    padding: 0 0 15px 0;
-}
-
 .top_footer ul a {
     text-decoration: none;
-    color: #151515;
-    font-size: 15px;
-    font-family: sans-serif;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 42px;
+    color: #202020;
 }
 
 .top_footer ul#redes_sociais li {
@@ -277,12 +341,18 @@ ul#mini li#play img {
 
 .box_paragraph {
     margin-left: 80px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
 
 .bottom_footer img {
     position: absolute;
     right: 20px;
-    bottom: 30px;
+    bottom: 40px;
 }
 
 .bottom_footer p {

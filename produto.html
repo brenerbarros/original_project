@@ -4,8 +4,9 @@
         <title>Layout</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="lightbox.min.css">
-        
+        <script type=text/javascript src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         
         <style></style>
     </head>
@@ -19,12 +20,12 @@
             
             <nav>
                 <ul>
-                    <li style="float: left"><a href="">Entrar | Cadastre-se</a></li>
+                    <li id="login_button"><a href="">Entrar | Cadastre-se</a></li>
                     <li><a href="">SAPATOS</a></li>
                     <li><a href="">BOLSAS</a></li>
                     <li><a href="">ACESSÓRIOS</a></li>
                     <li><a href="">OFF</a></li>
-                    <li style="float: right; margin-right: 10px;"><a href=""><img src="Images/Header/compras_icon.png" title="Sacola"></a> <span style="font-size: 14px; color: gray;" id="products_number">0</span></li>
+                    <li style="float: right; margin-right: 10px;"><a href=""><img src="Images/Header/compras_icon.png" title="Sacola"></a> <span style="font-size: 12px; color: gray; font-family: Gotham; color: #686868;" id="products_number">0</span></li>
                     <li style="float: right; margin-right: 25px; margin-top: 5px;"><form><input type="text" name="busca" placeholder="Busca" style="border: 0; outline: 0; color: #7f7f7f" size="3" title="Preencha este campo."></form>
                     <li style="float: right; margin-right: 10px;"><img src="Images/Header/buscar_icon.png"></li>
                 </ul>
@@ -33,45 +34,47 @@
             <section>
                 <div class="nav_bottom"><a href="">Home</a> / <a href=""><span style="font-weight: bold">Sapatos</span></a></div>
                 
-                <ul id="mini">
-                    <li id="play">Vídeo
-                        <img src="Images/Content/play_video.png">
-                    </li>
-                    <li id="up"><img src="Images/Content/seta_up.png"></li>
-                    <li><img src="Images/Content/sandalias.png"></li>
-                    <li style="opacity: 0.5"><img src="Images/Content/sandalias.png"></li>
-                    <li style="opacity: 0.5"><img src="Images/Content/sandalias.png"></li>
-                    <li style="opacity: 0.5"><img src="Images/Content/sandalias.png"></li>
-                    <li id="down"><img src="Images/Content/seta_down.png"></li>
-                </ul>
-                
-                <img id="produto" src="Images/Content/sandalias.png" alt="sandálias">
-                
-                <div class="card">
-                    <span style="font-size: 25px; font-weight: bold; text-transform: uppercase; color: #2E2E2E; letter-spacing: 1px;">Rasteira tira dedo</span>
-                    <p>RT 0568 | 03.07.0653</p>
-                    <p style="margin-top: 25px;"><span style="color: #DF8F76; text-decoration: line-through">R$ 69,00 </span><span style="color: #DF8F76;">|</span><span style="font-size: 20px; font-weight: bold; color: #585858"> R$ 55,20</span></p>
-                    <p style="color: #A4A4A4; font-size: 12px">Ou 6x de R$ 9,20</p>
-                    <p style="margin-top: 40px">Cor: (<span id="cor_txt">cores</span>)</p>
-                    
-                    <ul id="cores">
-                        <li id="roxo"></li>
-                        <li id="fucsia"></li>
-                        <li id="marrom"></li>
-                        <li id="preto"></li>
+                <center>
+                    <ul id="mini">
+                        <li id="play">Vídeo
+                            <img src="Images/Content/play_video.png">
+                        </li>
+                        <li id="up"><img src="Images/Content/seta_up.png"></li>
+                        <li><img src="Images/Content/sandalias.png"></li>
+                        <li style="opacity: 0.5"><img src="Images/Content/sandalias.png"></li>
+                        <li style="opacity: 0.5"><img src="Images/Content/sandalias.png"></li>
+                        <li style="opacity: 0.5"><img src="Images/Content/sandalias.png"></li>
+                        <li id="down"><img src="Images/Content/seta_down.png"></li>
                     </ul>
-                    
-                    <p style="margin: 80px 0 20px 0; text-align: left;">Tamanho: (<span id="tamanho_txt">0</span>)</p>
-                    
-                    <ul id="tamanhos">
-                        <li id="um"><p style="margin-top: 8px" id="um_txt">33</p></li>
-                        <li id="dois"><p style="margin-top: 8px" id="dois_txt">34</p></li>
-                        <li id="tres"><p style="margin-top: 8px" id="tres_txt">35</p></li>
-                    </ul>
-                    
-                    <a href="Images/Content/sandalias.png"><img src="Images/Card/button_add.png" id="button_add"></a>
-                    <p style="width: 405px; margin-top: 15px; font-size: 15px">Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.</p>
-                </div>
+
+                    <img id="produto" src="Images/Content/sandalias.png" alt="sandálias">
+
+                    <div class="card">
+                        <span style="font-weight: bold; font-family: Gotham; font-size: 26px; line-height: 37px; text-transform: uppercase; color: #202020;">Rasteira tira dedo</span>
+                        <p>RT 0568 | 03.07.0653</p>
+                        <p style="margin-top: 25px;"><span style="color: #E35442;text-decoration: line-through">R$ 69,00 </span><span style="color: #DF8F76;">|</span><span style="font-family: Gotham; font-size: 20px; font-weight: bold; line-height: 28px; color: #686868;"> R$ 55,20</span></p>
+                        <p style="color: #7F7F7F; font-size: 12px">Ou 6x de R$ 9,20</p>
+                        <p style="margin-top: 40px">Cor: (<span id="cor_txt">cores</span>)</p>
+
+                        <ul id="cores">
+                            <li id="roxo"></li>
+                            <li id="fucsia"></li>
+                            <li id="marrom"></li>
+                            <li id="preto"></li>
+                        </ul>
+
+                        <p style="margin: 80px 0 20px 0; text-align: left;">Tamanho: (<span id="tamanho_txt">0</span>)</p>
+
+                        <ul id="tamanhos">
+                            <li id="um"><p id="um_txt">33</p></li>
+                            <li id="dois"><p id="dois_txt">34</p></li>
+                            <li id="tres"><p id="tres_txt">35</p></li>
+                        </ul>
+
+                        <a href="Images/Content/sandalias.png"><img src="Images/Card/button_add.png" id="button_add"></a>
+                        <p style="width: 405px; margin-top: 15px;">Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.</p>
+                    </div>
+                </center>
             </section>
             
             <div class="section_products">
@@ -84,9 +87,9 @@
                         <li><img src="Images/Products/product3.png"><p style="text-align: left">R$ 204,90</p></li>
                         <li><img src="Images/Products/product4.png"><p style="text-align: left">R$ 204,90</p></li>
                     </ul>
-                    <img src="Images/Products/left.png" id="products_button_left">
-                    <p id="number_list"> 1 de 10 </p>
-                    <img src="Images/Products/right.png" id="right">
+                    <img src="Images/Products/left.png" id="products_button_left" onclick="productsButton(this)">
+                    <p id="number_list"> <span id="number_products">0</span> de 3 </p>
+                    <img src="Images/Products/right.png" id="products_button_right" onclick="productsButton(this)">
                 </center>
             </div>
             
@@ -99,21 +102,21 @@
                     </ul>
                     
                     <ul id="instituicao">
-                        <li style="color: #AFB5C1; font-size: 17px; font-weight: bold; font-family: sans-serif">INSTITUCIONAL</li>
+                        <li class="topFooter_title">INSTITUCIONAL</li>
                         <li><a href="">A Marca</a></li>
                         <li><a href="">Lojas</a></li>
                         <li><a href="">Contato</a></li>
                     </ul>
                     
                     <ul id="info">
-                        <li style="color: #AFB5C1; font-size: 17px; font-weight: bold; font-family: sans-serif">INFORMAÇÕES</li>
+                        <li class="topFooter_title">INFORMAÇÕES</li>
                         <li><a href="">Formas de pagamento</a></li>
                         <li><a href="">Trocas e devoluções</a></li>
                         <li><a href="">Cuidados com o produto</a></li>
                     </ul>
                     
                     <ul id="sobre">
-                        <li style="color: #AFB5C1; font-size: 17px; font-weight: bold; font-family: sans-serif">CONHEÇA</li>
+                        <li class="topFooter_title">CONHEÇA</li>
                         <li><a href="">Franquias e Multimarcas</a></li>
                         <li><a href="">Trabalhe com a gente</a></li>
                         <li><a href="">Procon-RJ</a></li>
@@ -130,7 +133,6 @@
                 </div>
             </footer>
         </div>
-        <script type=text/javascript src="script.js"></script>
-        <script type=text/javascript src="lightbox-plus-jquery.min.js"></script>
+        
     </body>
 </html>
