@@ -36,14 +36,14 @@ nav {
     text-align: center;
 }
 
-input[type=text] {
+nav input[type=text] {
     border: 0;
     outline: 0; 
     color: #7f7f7f; 
     width: 50px
 }
 
-input[type=text]:focus {
+nav input[type=text]:focus {
   width: 100px;
 }
 
@@ -169,7 +169,21 @@ ul#mini li#play img {
     text-align: left;
 }
 
+.card a.guia-medidas {
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #DE8F75;
+    margin-left: 80px;
+}
+
 .card ul#cores {
+    display: block;
     margin-top: 15px;
     list-style-type: none;
 }
@@ -271,15 +285,35 @@ ul#mini li#play img {
     padding: 150px 0 40px 0;
 }
 
+.section_products ul .products-paleta {
+    float: right;
+    margin-right: 10px;
+}
+
+.section_products ul .products-paleta li {
+    float: right;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin: 5px 5px 0 0;
+}
+
+.section_products ul .products-paleta li:hover {
+    cursor: pointer;
+}
+
 .section_products ul#products_bottom li {
     display: inline-block;
-    margin-right: 10px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     color: #202020;
+}
+
+.section_products ul#products_bottom img {
+    margin-right: 10px;
 }
 
 .section_products img#products_button_left, .section_products img#products_button_right, .section_products p#number_list {
@@ -303,7 +337,7 @@ ul#mini li#play img {
 
 .top_footer {
     position: relative;
-    border-top: 2px solid #AFB5C1;
+    border-top: 2px solid #AEB6C1;
 }
 
 .top_footer .topFooter_title {
@@ -342,6 +376,75 @@ ul#mini li#play img {
 .top_footer ul#info {
     float: left;
     margin-left: 40px;
+}
+
+.ellipse {
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+    border-radius: 50%;
+    border: 2px solid #AEB6C1;
+    background: #FFFFFF;
+    padding: 40px;
+}
+
+.ellipse span#form-title {
+    font-family: Gotham;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202020;
+}
+
+.ellipse form {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(32, 32, 32, 0.5);
+}
+
+.ellipse input[type=text] {
+    border-bottom: 2px solid #AEB6C1;;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    font-family: Open Sans;
+    font-size: 14px;
+    width: 216px;
+    color: #202020;
+}
+
+.ellipse input[type=submit] {
+    width: 110px;
+    height: 50px;
+    background: #DE8F75;
+    border-color: #fff;
+    box-shadow: none;
+    border-radius: 3px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.ellipse input[type=submit]:focus {
+    outline: 0;
+    border-color: #fff;
+    box-shadow: none;
+}
+
+.ellipse input[type=submit]:hover {
+    cursor: pointer;
 }
 
 .bottom_footer {

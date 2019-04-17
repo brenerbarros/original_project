@@ -62,7 +62,7 @@
                             <li id="preto"></li>
                         </ul>
 
-                        <p style="margin: 80px 0 20px 0; text-align: left;">Tamanho: (<span id="tamanho_txt">0</span>)</p>
+                        <p style="margin: 80px 0 20px 0; text-align: left;">Tamanho: (<span id="tamanho_txt">0</span>)<a href="" class="guia-medidas">Guia de Medidas</a></p>
 
                         <ul id="tamanhos">
                             <li id="um"><p id="um_txt">33</p></li>
@@ -81,10 +81,38 @@
                 
                 <center>
                     <ul id="products_bottom">
-                        <li><img src="Images/Products/product1.png"><p style="text-align: left">R$ 204,90</p></li>
-                        <li><img src="Images/Products/product2.png"><p style="text-align: left">R$ 204,90</p></li>
-                        <li><img src="Images/Products/product3.png"><p style="text-align: left">R$ 204,90</p></li>
-                        <li><img src="Images/Products/product4.png"><p style="text-align: left">R$ 204,90</p></li>
+                        <li><img src="Images/Products/product1.png" style="display: block"><p style="display: inline; float: left">R$ 204,90</p>
+                            <ul class="products-paleta">
+                                <li style="background-color: #A9095E;"></li>
+                                <li style="background-color: #6B85C1;"></li>
+                                <li style="background-color: #A14830;"></li>
+                                <li style="background-color: #000000;"></li>
+                            </ul>
+                        </li>
+                        <li><img src="Images/Products/product2.png" style="display: block"><p style="display: inline; float: left">R$ 204,90</p>
+                            <ul class="products-paleta">
+                                <li style="background-color: #A9095E;"></li>
+                                <li style="background-color: #6B85C1;"></li>
+                                <li style="background-color: #A14830;"></li>
+                                <li style="background-color: #000000;"></li>
+                            </ul>
+                        </li>
+                        <li><img src="Images/Products/product3.png" style="display: block"><p style="display: inline; float: left">R$ 204,90</p>
+                            <ul class="products-paleta">
+                                <li style="background-color: #A9095E;"></li>
+                                <li style="background-color: #6B85C1;"></li>
+                                <li style="background-color: #A14830;"></li>
+                                <li style="background-color: #000000;"></li>
+                            </ul>
+                        </li>
+                        <li><img src="Images/Products/product4.png" style="display: block"><p style="display: inline; float: left">R$ 204,90</p>
+                            <ul class="products-paleta">
+                                <li style="background-color: #A9095E;"></li>
+                                <li style="background-color: #6B85C1;"></li>
+                                <li style="background-color: #A14830;"></li>
+                                <li style="background-color: #000000;"></li>
+                            </ul>
+                        </li>
                     </ul>
                     <img src="Images/Products/left.png" id="products_button_left" onclick="productsButton(this)">
                     <p id="number_list"> <span id="number_products">0</span> de 3 </p>
@@ -120,6 +148,16 @@
                         <li><a href="">Trabalhe com a gente</a></li>
                         <li><a href="">Procon-RJ</a></li>
                     </ul>
+                    
+                    <div class="ellipse"><center><span id="form-title">Assine nossa news</span></center><br>
+                        <form>
+                            Nome:<br>
+                            <input type="text" name="nome"><br>
+                            E-mail:<br>
+                            <input type="text" name="email"><br>
+                            <center><input type="submit" value="ENVIAR"></center>
+                        </form>
+                    </div>
                 </div>
                 
                 <div class="bottom_footer">
